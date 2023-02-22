@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <table class="table table-hover">
+            <thead>
+                <div class="spinner-border" role="status" id="spinner1">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <tr class="text-center">
+                    <th>Order Id</th>
+                    <th>Customer Id</th>
+                    <th>Order date Time</th>
+                </tr>
+            </thead>
+            <tbody id="order_data"></tbody>
+        </table>
+
+
+    </div>
+</div>
+
+
+<style>
+        #spinner1 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+
+    }
+
+</style>
